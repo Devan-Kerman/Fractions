@@ -11,7 +11,9 @@ public class Bench {
 	public static final Fraction BIG_CACHED = Fraction.of(new BigInteger("234567865432345678654323456"), new BigInteger("8765434567897654324567865432"));
 
 	@Benchmark
-	public void control() {}
+	public void control(Blackhole blackhole) {
+		blackhole.consume(false);
+	}
 
 	@Benchmark
 	public void allocateCached(Blackhole blackhole) {

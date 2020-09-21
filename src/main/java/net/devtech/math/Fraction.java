@@ -5,12 +5,15 @@ import java.math.BigInteger;
 /**
  * do <b>NOT</b> implement this interface!
  */
+// todo infinity
 public interface Fraction extends Comparable<Fraction> {
 	LongFraction MINUS_ONE = new LongFraction(-1, 1);
 	LongFraction ZERO = new LongFraction(0, 1);
 	LongFraction ONE_THIRD = new LongFraction(1, 3);
 	LongFraction ONE_HALF = new LongFraction(1, 2);
-	// half of 2
+	/**
+	 * half of 2
+	 */
 	LongFraction ONE = new LongFraction(1, 1);
 	LongFraction TWO = new LongFraction(2, 1);
 

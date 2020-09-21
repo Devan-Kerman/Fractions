@@ -32,5 +32,13 @@ dependencies {
 }
 
 jmh {
-    forceGC = true
+    benchmarkMode = ['thrpt']
+    synchronizeIterations = false
+    threads = 4
+
+    timeOnIteration = '5s'
+
+    warmupForks = 0
+    warmupIterations = 1
+    warmupBatchSize = 10_000
 }
