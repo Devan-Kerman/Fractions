@@ -18,9 +18,7 @@ public class BigFraction implements Fraction {
 		if(o instanceof LongFraction) return this.signum();
 
 		return this.numerator.multiply(o.getDenominator())
-		                     .subtract(o.getNumerator()
-		                                .multiply(this.denominator))
-		                     .signum();
+		                     .compareTo(o.getNumerator().multiply(this.denominator));
 	}
 
 	@Override

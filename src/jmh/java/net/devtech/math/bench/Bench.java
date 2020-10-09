@@ -77,7 +77,7 @@ public class Bench {
 		fraction = fraction.add(Fraction.TWO);
 
 		// force simplification for benchmarking
-		fraction.div(345432345432L);
-		fraction.div(345432345432L);
+		fraction.div(Long.MAX_VALUE);
+		fraction.div(Long.MAX_VALUE);
 	}
 }
